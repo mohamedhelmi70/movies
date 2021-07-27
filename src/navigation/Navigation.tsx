@@ -6,6 +6,8 @@ import {Movies, Movie} from '../screens';
 import {Text, View} from '../components/Themed';
 import {wp} from '../constants/Layout';
 import Colors from '../constants/Colors';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {Pressable} from 'react-native';
 
 const Stack = createStackNavigator<RootParamList>();
 
@@ -37,14 +39,20 @@ function Navigation() {
                 <Stack.Screen
                     name="Movie"
                     component={Movie}
-                    options={{
+                    options={({navigation}) => ({
                         headerStyle: {
                             shadowColor: Colors.light.background,
                         },
                         headerTitle: '',
                         headerRight: () => <View />,
-                        headerLeft: () => <View />,
-                    }}
+                        headerLeft: () => (
+                            <Pressable
+                                style={{width: wp('15%'), alignItems: 'center'}}
+                                onPress={() => navigation.goBack()}>
+                                <Icon name="chevron-left" size={30} color="#000" />
+                            </Pressable>
+                        ),
+                    })}
                 />
             </Stack.Navigator>
         </SafeAreaView>
