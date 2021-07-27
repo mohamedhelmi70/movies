@@ -1,7 +1,8 @@
+import {StackNavigationProp} from '@react-navigation/stack';
 import axios from 'axios';
 import React from 'react';
 import {FlatList, Pressable, StyleSheet} from 'react-native';
-import {Genre, Movie} from '../../../types';
+import {Genre, Movie, RootParamList} from '../../../types';
 import {Container} from '../../components';
 import {Text, View} from '../../components/Themed';
 import Colors from '../../constants/Colors';
@@ -10,7 +11,11 @@ import {useStore} from '../../contexts/StoreContext';
 import useIsMountedRef from '../../hooks/useIsMountedRef';
 import MovieCard from './MovieCard';
 
-function Movies() {
+interface MoviesProps {
+    navigation: StackNavigationProp<RootParamList, 'Movies'>;
+}
+
+function Movies({navigation}: MoviesProps) {
     const isMountedRef = useIsMountedRef();
     const [tab, setTab] = React.useState<'upcoming' | 'top_rated' | 'popular'>('upcoming');
     const [page, setPage] = React.useState<number>(1);
@@ -89,7 +94,12 @@ function Movies() {
                 showsVerticalScrollIndicator={false}
                 keyExtractor={(item) => item?.id.toString()}
                 onEndReachedThreshold={0.2}
-                renderItem={({item}) => <MovieCard movie={item} onPress={() => {}} />}
+                renderItem={({item}) => (
+                    <MovieCard
+                        movie={item}
+                        onPress={() => navigation.navigate('Movie', {movieId: item?.id, movie: item})}
+                    />
+                )}
             />
         </Container>
     );
