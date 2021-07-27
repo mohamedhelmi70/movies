@@ -1,9 +1,9 @@
 import {RouteProp} from '@react-navigation/native';
 import axios from 'axios';
 import React from 'react';
-import {StyleSheet, Image, FlatList, ScrollView} from 'react-native';
+import {StyleSheet, FlatList, ScrollView} from 'react-native';
 import {Credit, RootParamList} from '../../../types';
-import {Container} from '../../components';
+import {Container, FastImage} from '../../components';
 import {Text, View} from '../../components/Themed';
 import Colors from '../../constants/Colors';
 import {wp} from '../../constants/Layout';
@@ -46,10 +46,9 @@ function MovieScreen({route}: MovieScreenProps) {
                 style={{flex: 1, width: '100%'}}>
                 {Boolean(movie?.poster_path) && (
                     <View style={styles.posterView}>
-                        <Image
-                            source={{uri: `https://www.themoviedb.org/t/p/original${movie?.poster_path}`}}
+                        <FastImage
+                            url={`https://www.themoviedb.org/t/p/original${movie?.poster_path}`}
                             style={styles.poster}
-                            resizeMode="cover"
                         />
                     </View>
                 )}

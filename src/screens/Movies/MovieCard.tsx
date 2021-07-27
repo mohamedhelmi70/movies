@@ -1,7 +1,8 @@
 import moment from 'moment';
 import React from 'react';
-import {Image, Pressable, StyleSheet} from 'react-native';
+import {Pressable, StyleSheet} from 'react-native';
 import {Movie} from '../../../types';
+import {FastImage} from '../../components';
 import {Text, View} from '../../components/Themed';
 import Colors from '../../constants/Colors';
 import {wp} from '../../constants/Layout';
@@ -16,10 +17,9 @@ function MovieCard({movie, onPress}: MovieCardProps) {
         <Pressable onPress={onPress} style={styles.card}>
             <View>
                 {Boolean(movie?.poster_path) && (
-                    <Image
-                        source={{uri: `https://www.themoviedb.org/t/p/original${movie?.poster_path}`}}
+                    <FastImage
+                        url={`https://www.themoviedb.org/t/p/original${movie?.poster_path}`}
                         style={styles.poster}
-                        resizeMode="cover"
                     />
                 )}
             </View>

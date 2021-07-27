@@ -2,6 +2,7 @@ import React from 'react';
 import {Image, StyleSheet} from 'react-native';
 import {Credit} from '../../../types';
 import {userDefault} from '../../assets';
+import {FastImage} from '../../components';
 import {Text, View} from '../../components/Themed';
 import {wp} from '../../constants/Layout';
 
@@ -14,10 +15,9 @@ function CrditCard({credit}: CreditCardProps) {
         <View style={styles.card}>
             <View>
                 {Boolean(credit?.profile_path) ? (
-                    <Image
-                        source={{uri: `https://www.themoviedb.org/t/p/original${credit?.profile_path}`}}
+                    <FastImage
+                        url={`https://www.themoviedb.org/t/p/original${credit?.profile_path}`}
                         style={styles.profile}
-                        resizeMode="cover"
                     />
                 ) : (
                     <Image source={userDefault} style={styles.profile} resizeMode="cover" />
