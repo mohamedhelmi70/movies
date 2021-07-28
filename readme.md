@@ -39,12 +39,9 @@ The Movies app would be implemented using the typical framework of react which i
 
 The above provides a quick overview on how the code has been setup, would be developed and built.
 
-## Screehots
+## Screenshots
 
-### Screen1
+!["First Screen"](https://github.com/mohamedhelmi70/movies/blob/master/screen1.png?raw=true "Movies")
 
-![alt text](https://github.com/mohamedhelmi70/movies/blob/master/screen1.png?raw=true)
 
-### Screen2
-
-![alt text](https://github.com/mohamedhelmi70/movies/blob/master/screen2.png?raw=true)
+!["Secound Screen](https://github.com/mohamedhelmi70/movies/blob/master/screen2.png?raw=true "Movie")
