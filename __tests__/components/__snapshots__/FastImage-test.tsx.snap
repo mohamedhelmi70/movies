@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders FastImage correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "height": 50,
+        "width": 50,
+      },
+    ]
+  }
+>
+  <FastImageView
+    resizeMode="cover"
+    source={
+      Object {
+        "cache": "immutable",
+        "headers": Object {
+          "Authorization": "4f298a53e552283bee957836a529baec",
+        },
+        "priority": "normal",
+        "uri": "https://placeholder.png",
+      }
+    }
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
+</View>
+`;
