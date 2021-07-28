@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders MovieCard correctly 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignSelf": "center",
+      "backgroundColor": "#fff",
+      "borderRadius": 15,
+      "elevation": 4,
+      "flex": 1,
+      "flexDirection": "row",
+      "marginBottom": 30,
+      "padding": 30,
+      "shadowColor": "#888",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.23,
+      "shadowRadius": 2.62,
+      "width": 675,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFF",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "borderRadius": 22.5,
+            "height": 210,
+            "width": 135,
+          },
+        ]
+      }
+    >
+      <FastImageView
+        resizeMode="cover"
+        source={
+          Object {
+            "cache": "immutable",
+            "headers": Object {
+              "Authorization": "4f298a53e552283bee957836a529baec",
+            },
+            "priority": "normal",
+            "uri": "https://www.themoviedb.org/t/p/original/poster.png",
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFF",
+        },
+        Object {
+          "marginLeft": 30,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#334443",
+            "fontFamily": "Roboto",
+            "fontWeight": "700",
+            "textAlign": "left",
+          },
+          Object {
+            "fontSize": 34,
+            "maxWidth": 450,
+          },
+        ]
+      }
+    >
+      test
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#888",
+            "fontFamily": "Roboto",
+            "fontWeight": "400",
+            "textAlign": "left",
+          },
+          Object {
+            "fontSize": 26.5,
+            "marginTop": 15,
+          },
+        ]
+      }
+    >
+      September 10, 1994
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFF",
+          },
+          Object {
+            "marginTop": 15,
+            "width": 450,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#79c700",
+              "fontFamily": "Roboto",
+              "fontWeight": "700",
+              "textAlign": "left",
+            },
+            Object {
+              "alignSelf": "flex-end",
+              "fontSize": 32.5,
+            },
+          ]
+        }
+      >
+        30
+        %
+      </Text>
+    </View>
+  </View>
+</View>
+`;
