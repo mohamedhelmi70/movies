@@ -41,6 +41,6 @@ The above provides a quick overview on how the code has been setup, would be dev
 
 ## Screehots
 
-![alt text](https://github.com/mohamedhelmi70/movies/blob/master/screen1.png)
+![alt text](https://github.com/mohamedhelmi70/movies/blob/master/screen1.png?raw=true)
 
-![alt text](https://github.com/mohamedhelmi70/movies/blob/master/screen1.png)
+![alt text](https://github.com/mohamedhelmi70/movies/blob/master/screen1.png?raw=true)
