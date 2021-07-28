@@ -32,7 +32,7 @@ function MovieBody({movie}: MovieBodyProps) {
                 </View>
             )}
             <View style={styles.overview}>
-                <Text weight="700" style={styles.subtitle}>
+                <Text weight="700" font="Roboto-Bold" style={styles.subtitle}>
                     Overview
                 </Text>
                 <Text lightColor="#888" style={styles.paragraph}>
@@ -41,7 +41,7 @@ function MovieBody({movie}: MovieBodyProps) {
             </View>
             {movie?.genres && movie?.genres?.length > 0 && (
                 <View style={styles.overview}>
-                    <Text weight="700" style={styles.subtitle}>
+                    <Text weight="700" font="Roboto-Bold" style={styles.subtitle}>
                         Genres
                     </Text>
                     <View style={styles.genresView}>

@@ -45,7 +45,7 @@ function MovieScreen({route}: MovieScreenProps) {
                 <MovieBody movie={route?.params?.movie} />
                 {credits && credits?.length > 0 && (
                     <View style={styles.credit}>
-                        <Text weight="700" style={styles.subtitle}>
+                        <Text weight="700" font="Roboto-Bold" style={styles.subtitle}>
                             Credits
                         </Text>
                     </View>
