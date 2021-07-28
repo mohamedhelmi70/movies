@@ -33,7 +33,7 @@ The Movies app would be implemented using the typical framework of react which i
 
 ## Auther
 
--   @mohamedhemi70 (React Native Engineer)
+-   @Mohamed Helmi (React Native Engineer)
 
 ## Summary
 
@@ -41,6 +41,6 @@ The above provides a quick overview on how the code has been setup, would be dev
 
 ## Screehots
 
-![alt text](https://github.com/[mohamedhelmi70]/[movies]/blob/[master]/src/assets/images/screen1.png?raw=true)
+![alt text](https://github.com/[mohamedhelmi70]/[movies]/blob/[master]/screen1.png?raw=true)
 
-![alt text](https://github.com/[mohamedhelmi70]/[movies]/blob/[master]/src/assets/images/screen2.png?raw=true)
+![alt text](https://github.com/[mohamedhelmi70]/[movies]/blob/[master]/screen2.png?raw=true)
