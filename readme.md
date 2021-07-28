@@ -17,8 +17,10 @@ Movies is an app that allows users to have explore upcoming, popular and top rat
 To update and access the code for the application, please follow these steps:
 
 -   git clone (...url)
--   Run npm install
--   To open, Run ‘expo start’
+-   Run `yarn`
+-   `cd ios && pod install`
+-   To open on IOS, Run `yarn ios`
+-   To open on Android, Run `yarn android`
 
 ## Code Explanation
 
